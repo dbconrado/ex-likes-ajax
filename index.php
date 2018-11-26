@@ -60,14 +60,7 @@
 	}
 
 	function darLike(e) {
-		e.preventDefault();
-
-		// Submeter o formulário via AJAX
-		var form = new FormData(e.target);
-		var xhr = new XMLHttpRequest();
-		xhr.onload = () => e.target.querySelector('.curtidas').textContent = xhr.responseText;
-		xhr.open('POST', 'like.ajax.php');
-		xhr.send(form);
+		// Continuar o código aqui
 	}
 
 	window.onload = buscarFrases;
